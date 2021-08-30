@@ -1,29 +1,60 @@
-*{
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    height:100%;
-}
+/* CSS PARA LA WEB DE DSE:  DATA SCIENCE STUDENTS */
+/* Luis Felipe Cruz Ceballos - 2110065 */
+/* Jorge Saul Castillo Jaimes - 2111127 */
+/* Grupo H1 */
+/* Profesor: Henry */
 
 /* Agregar fuentes locales */
 @font-face {
-    font-family: 'league_spartanbold';
+    font-family: 'fuente_titulos';
     src: url('../fonts/LeagueSpartan-Bold.otf');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'kaushan_scriptregular';
+    font-family: 'fuente_frase';
     src: url('../fonts/KaushanScript-Regular.otf');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'fuente_texto_regular';
+    src: url('../fonts/Quicksand-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fuente_texto_bold';
+    src: url('../fonts/Quicksand-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fuente_texto_italic';
+    src: url('../fonts/Quicksand-Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fuente_texto_lightitalic';
+    src: url('../fonts/Quicksand-LightItalic.otf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body{
-    font-family: montserrat;
+    font-family: fuente_texto_regular;
+    padding-top: 95px !important;
+    padding-bottom: 115px !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    min-height: 50px;
+    height: auto;
 }
 
 section{
@@ -134,60 +165,93 @@ nav ul li a{
     border-radius: 3px;
     text-transform: uppercase;
 }
+
 a.active,a:hover{
     background: #1b9bff;
     transition: .5s;
 }
-div footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15%;
-}
-.footer-container{
-    background-color: #555555;
-    padding-bottom: 4rem;
-    height: 10%;
-}
-.footer{
-    width: 80%;
-    background-color: #555555;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.footer-heading{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4em;
-}
-.footer-heading h2{
-    margin-bottom: 2rem;
-}
-.footer-heading a{
-    color: #ffffff;
+
+a:link {
+    color: unset !important;
     text-decoration: none;
-    margin-bottom: 0.5rem;
-}
-.footer-heading a:hover{
-    color: red;
-    transition: 0.3s ease-out;
 }
 
 .pie_pagina{
     width: 100%;
-    height: 85px;
+    height: 125px;
     position: fixed;
     bottom: 0;
     left: 0;
-    background: #00256B;
+    background: #00153b;
     color: #ffffff;
-    font-family: league_spartanbold;
-    margin-top: 3px;
+    font-family: fuente_titulos;
     z-index: 1;
-    text-align: center;
-    font-weight: bold;
     padding-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.tabla_pie_pagina{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.celda_izquierda{
+    width: 30%;
+    text-align: left;
+    padding-right: 10px;
+    border-right-color: white;
+    border-right-width: 3px;
+    border-right-style: ridge;
+}
+
+.celda_centro{
+    width: 40%;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.celda_derecha{
+    width: 40%;
+    text-align: center;
+    padding-left: 10px;
+    border-left-color: white;
+    border-left-width: 3px;
+    border-left-style: ridge;
+}
+
+.celda_redes{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.imgs_socialMedia{
+    width: 26px;
+    height: 26px;
+    padding: 3px;
+    margin: auto auto;
+}
+
+.imgs_socialMedia:hover{
+    background: #1b9bff;
 }
