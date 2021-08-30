@@ -50,11 +50,12 @@
 body{
     font-family: fuente_texto_regular;
     padding-top: 95px !important;
-    padding-bottom: 115px !important;
+    padding-bottom: 125px !important;
     background-color: #ffffff !important;
     background-image: none !important;
     min-height: 50px;
     height: auto;
+    font-size: 1.2em;
 }
 
 section{
@@ -178,13 +179,14 @@ a:link {
 
 .pie_pagina{
     width: 100%;
-    height: 125px;
+    height: 115px;
     position: fixed;
     bottom: 0;
     left: 0;
     background: #00153b;
     color: #ffffff;
     font-family: fuente_titulos;
+    font-size: 0.8em;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -254,4 +256,60 @@ img {
 
 .imgs_socialMedia:hover{
     background: #1b9bff;
+}
+
+.div-contact{
+    background-color: #e9e9e9;
+    border-radius: 15px;
+    padding: 10px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.div-contact-title{
+    font-family: fuente_titulos;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.formulario{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+label{
+    font-family: fuente_texto_bold;
+}
+
+input{
+    font-family: fuente_texto_regular;
+    font-size: 1.2em !important;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+}
+
+input:focus{
+    box-shadow: 0 0 7px #cc00cc;
+    background-color: #9a9a9a;
+    color: #ffffff;
+    font-family: fuente_texto_bold;
+}
+
+input:hover{
+    box-shadow: 0 0 7px #aeaecf;
+}
+
+.enviar_formulario{
+    width: 95%;
+    margin-left: 15px;
+    margin-right: 15px;
 }
