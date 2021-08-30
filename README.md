@@ -1,6 +1,6 @@
 # TALLERES DE PROGRAMACIÓN EN LA WEB
 
-En este repositorio se estarán subiendo los talleres desarrollados en la asignatura de Programación en la Web _(22967)_ dictada por el docente Henry Andrés Jiménez Herrera.
+En este repositorio se estarán subiendo los talleres desarrollados en la asignatura de Programación en la Web _(22967)_ dictada por el docente Henry Andrés Jiménez Herrera durante el primer semestre académico del año 2021.
 
 Dentro de los talleres aquí subidos están:
 
