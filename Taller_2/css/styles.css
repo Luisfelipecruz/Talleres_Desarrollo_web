@@ -69,11 +69,9 @@ span{
     display: inline-block;
     margin-left: 1em;
     margin-bottom: 1em;
-    vertical-align: middle;
     border: 1px solid #555;
     border-radius: 1em;
     padding: 2em;
-    background-color: yellow;
 }
 
 span.a {
@@ -85,11 +83,15 @@ span.b {
     width: 60%;
     height: 80%;
 }
+span.b a {
+    color: blue;
+}
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
