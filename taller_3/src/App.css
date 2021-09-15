@@ -21,6 +21,19 @@
     padding-bottom: 15px;
 }
 
+.graficos {
+    top: 35%;
+    left: 35%;
+    display: inline;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+    border:5px solid #101116;
+    padding-bottom: 15px;
+}
+
 .teclado {
     display: grid;
     grid-template-columns: repeat(4,1fr);
