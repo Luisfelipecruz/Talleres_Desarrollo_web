@@ -26,7 +26,7 @@ const renderActiveShape = (props: any) => {
     const sy = cy + (outerRadius + 10) * sin;
     const mx = cx + (outerRadius + 30) * cos;
     const my = cy + (outerRadius + 30) * sin;
-    const ex = mx + (cos >= 0 ? 1 : -1) * 22;
+    const ex = mx + (cos >= 0 ? 1 : -1) * 2;
     const ey = my;
     const textAnchor = cos >= 0 ? "start" : "end";
 
@@ -64,15 +64,15 @@ const renderActiveShape = (props: any) => {
                 y={ey}
                 textAnchor={textAnchor}
                 fill="#333"
-            >{`VALOR ${value}`}</text>
+            >{`VR ${value}`}</text>
             <text
-                x={ex + (cos >= 0 ? 1 : -1) * 12}
+                x={ex + (cos >= 0 ? 1 : -1) * 5}
                 y={ey}
                 dy={18}
                 textAnchor={textAnchor}
                 fill="#999"
             >
-                {`(Rate ${(percent * 100).toFixed(2)}%)`}
+                {`(${(percent * 100).toFixed(2)}%)`}
             </text>
         </g>
     );
@@ -116,13 +116,13 @@ const GraficaTorta = () => {
                                 marginTop: "2em"
                             }}>
                                 <ResponsiveContainer width={'99%'} height={300}>
-                                    <PieChart width={400} height={400}>
+                                    <PieChart width={200} height={200}>
                                         <Pie
                                             activeIndex={activeIndex}
                                             activeShape={renderActiveShape}
                                             data={entradas}
-                                            cx={400}
-                                            cy={140}
+                                            cx="50%"
+                                            cy="50%"
                                             innerRadius={60}
                                             outerRadius={80}
                                             fill="#8884d8"
