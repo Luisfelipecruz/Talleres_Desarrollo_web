@@ -10,13 +10,13 @@ function App() {
             <Router>
                 <Sidebar/>
                 <Switch>
-                    <Route exact path="/" exact component={LandingPage}/>
-                    <Route exact path="/Talleres_Desarrollo_web" exact component={LandingPage}/>
                     <Route path="/calculadora" exact component={Calculadora}/>
                     <Route path="/graficas" exact component={GraficaLinealPage}/>
                     <Route path='/graficas/graficalineal' exact component={GraficaLinealPage} />
                     <Route path='/graficas/graficatorta' exact component={GraficaTortaPage} />
                     <Route path='/graficas/graficahistograma' exact component={GraficaHistogramaPage} />
+                    <Route exact path="/" exact component={LandingPage}/>
+                    <Route exact path="/Talleres_Desarrollo_web" exact component={LandingPage}/>
                 </Switch>
             </Router>
         </>
