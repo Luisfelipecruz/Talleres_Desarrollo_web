@@ -1,6 +1,4 @@
 import React, {Fragment, useState} from 'react';
-import {Container, Row, Col} from "react-bootstrap";
-import {Card, Button, Accordion} from 'react-bootstrap';
 import '../App.css'
 
 const Calculadora = () => {

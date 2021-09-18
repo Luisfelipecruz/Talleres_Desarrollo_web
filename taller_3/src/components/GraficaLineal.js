@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {useForm} from "react-hook-form";
-import {Container, Row, Col, Card, Button, Accordion} from "react-bootstrap";
+import {Container, Row, Col, Card} from "react-bootstrap";
 import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer} from "recharts";
 import '../App.css'
 import CapturadorDatos from "./CapturadorDatos"

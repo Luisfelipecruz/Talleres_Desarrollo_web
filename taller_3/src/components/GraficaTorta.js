@@ -1,6 +1,5 @@
 import React, {useState, useCallback} from 'react';
-import {useForm} from "react-hook-form";
-import {Container, Row, Col, Card, Button, Accordion} from "react-bootstrap";
+import {Container, Row, Col, Card} from "react-bootstrap";
 import {PieChart, Pie, Sector, ResponsiveContainer} from "recharts";
 import '../App.css'
 import CapturadorDatos from "./CapturadorDatos"
