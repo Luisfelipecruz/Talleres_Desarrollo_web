@@ -8,13 +8,21 @@
     margin-top: 15px;
 }
 
+container{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 0 0 10% ;
+}
 .container {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     margin: 0 auto;
-    width: 340px;
+    width: 340px !important;
     text-align: center;
     border:10px solid #101116;
     background: #101116;
@@ -22,13 +30,7 @@
 }
 
 .graficos {
-    top: 35%;
-    left: 35%;
-    display: inline;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    width: 800px;
+    width: auto;
     text-align: center;
     border:5px solid #101116;
     padding-bottom: 15px;
@@ -40,6 +42,10 @@
     grid-auto-rows: minmax(65px, auto);
     padding: 5px;
 }
+.panelGraficas{
+    padding-top: 3em;
+}
+
 input [type="text"]{
 
     background-color: #10111600;

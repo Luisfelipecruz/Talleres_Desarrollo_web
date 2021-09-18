@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form";
 import {Container, Row, Col, Card, Button, Accordion} from "react-bootstrap";
 import '../App.css'
 
-const Graficas = () => {
+const CapturadorDatos = (props) => {
 
     const {
         register,
@@ -20,11 +20,15 @@ const Graficas = () => {
             ...entradas,
             {
                 id: entradas.length + 1,
-                valores: data.valores,
-                etiquetas: data.etiquetas
+                etiquetas: data.etiquetas.toUpperCase(),
+                valores: data.valores
             }
         ])
         e.target.reset();
+    }
+
+    const borrar = () => {
+        setEntradas(entradas.slice(0, -1));
     }
 
     const clear = () => {
@@ -49,8 +53,21 @@ const Graficas = () => {
                                             <form onSubmit={handleSubmit(onSubmit)}>
                                                 <Row>
                                                     <Col>
+                                                        <label>Nombre de la etiqueta</label>
                                                         <input type="hidden" value={0} {...register("id")} />
                                                         <label>Campo del valor</label>
+                                                        <input type="text" {...register("etiquetas", {
+                                                            required: {value: true, message: "Campo obligatorio"},
+                                                            minLength: {value: 1, message: "minimo un caracteres"}
+                                                        })} placeholder="Nombre de la etiqueta"
+                                                               className="form-control my-m2"/>
+                                                        {errors.etiquetas && (<span
+                                                            className="text-danger text-small d-block mb-2"> {errors.etiquetas.message} </span>)}
+                                                    </Col>
+                                                </Row>
+                                                <br/>
+                                                <Row>
+                                                    <Col>
                                                         <input type="number" {...register("valores", {
                                                             required: {value: true, message: "Campo obligatorio"},
                                                             min: {value: 0, message: "numero negativo"},
@@ -61,19 +78,6 @@ const Graficas = () => {
                                                                className="form-control my-m2"/>
                                                         {errors.valores && (<span
                                                             className="text-danger text-small d-block mb-2"> {errors.valores.message} </span>)}
-                                                    </Col>
-                                                </Row>
-                                                <br/>
-                                                <Row>
-                                                    <Col>
-                                                        <label>Nombre de la etiqueta</label>
-                                                        <input type="text" {...register("etiquetas", {
-                                                            required: {value: true, message: "Campo obligatorio"},
-                                                            minLength: {value: 2, message: "minimo dos caracteres"}
-                                                        })} placeholder="Nombre de la etiqueta"
-                                                               className="form-control my-m2"/>
-                                                        {errors.etiquetas && (<span
-                                                            className="text-danger text-small d-block mb-2"> {errors.etiquetas.message} </span>)}
                                                     </Col>
                                                 </Row>
                                                 <br/>
@@ -94,13 +98,19 @@ const Graficas = () => {
                                                     <ul>
                                                         {entradas.map(entradas => (
                                                             <li key={entradas.id}>
-                                                                <div>{entradas.id} - {entradas.valores} - {entradas.etiquetas}</div>
+                                                                <div>{entradas.id} - {entradas.etiquetas} - {entradas.valores}</div>
                                                             </li>
                                                         ))}
                                                     </ul>
                                                 </Col>
                                             </Row>
-                                            <button className="btn btn-md btn-danger" onClick={clear}>Clear</button>
+                                            <Row>
+                                                <button className="btn btn-md btn-danger" onClick={clear}>Clear</button>
+                                                <button className="btn btn-md btn-primary" style={{ marginTop: "5px",marginBottom: "5px"}} onClick={borrar}>Borrar ultimo </button>
+                                                <button className="btn btn-md btn-success"
+                                                        onClick={() => props.enviarPadre(entradas)}>Graficar
+                                                </button>
+                                            </Row>
                                         </Col>
                                     </Row>
                                 </Card.Body>
@@ -108,14 +118,10 @@ const Graficas = () => {
                         </Card>
                     </Accordion>
                 </Container>
-                <Container fluid="true">
-                    <Card>
-                    </Card>
-                </Container>
             </div>
         </>
     )
         ;
 };
 
-export default Graficas;
+export default CapturadorDatos;
