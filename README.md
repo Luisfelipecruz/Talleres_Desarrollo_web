@@ -5,3 +5,4 @@ En este repositorio se estarán subiendo los talleres desarrollados en la asigna
 Dentro de los talleres aquí subidos están:
 
 - [Taller 2](Taller_2): Taller que combina conocimientos de GIT _(trabajo colaborativo)_, HTML y CSS nativo.
+- [taller 3](taller_3): Taller utilizando react js para crear calculadora y graficas.
