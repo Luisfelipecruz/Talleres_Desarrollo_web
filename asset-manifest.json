@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Talleres_Desarrollo_web/taller_3/static/css/main.1aaeb019.chunk.css",
-    "main.js": "/Talleres_Desarrollo_web/taller_3/static/js/main.4e9dd9b2.chunk.js",
-    "main.js.map": "/Talleres_Desarrollo_web/taller_3/static/js/main.4e9dd9b2.chunk.js.map",
-    "runtime-main.js": "/Talleres_Desarrollo_web/taller_3/static/js/runtime-main.447fe1d8.js",
-    "runtime-main.js.map": "/Talleres_Desarrollo_web/taller_3/static/js/runtime-main.447fe1d8.js.map",
-    "static/css/2.6293a573.chunk.css": "/Talleres_Desarrollo_web/taller_3/static/css/2.6293a573.chunk.css",
-    "static/js/2.213bd424.chunk.js": "/Talleres_Desarrollo_web/taller_3/static/js/2.213bd424.chunk.js",
-    "static/js/2.213bd424.chunk.js.map": "/Talleres_Desarrollo_web/taller_3/static/js/2.213bd424.chunk.js.map",
-    "static/js/3.276732af.chunk.js": "/Talleres_Desarrollo_web/taller_3/static/js/3.276732af.chunk.js",
-    "static/js/3.276732af.chunk.js.map": "/Talleres_Desarrollo_web/taller_3/static/js/3.276732af.chunk.js.map",
-    "index.html": "/Talleres_Desarrollo_web/taller_3/index.html",
-    "static/css/2.6293a573.chunk.css.map": "/Talleres_Desarrollo_web/taller_3/static/css/2.6293a573.chunk.css.map",
-    "static/css/main.1aaeb019.chunk.css.map": "/Talleres_Desarrollo_web/taller_3/static/css/main.1aaeb019.chunk.css.map",
-    "static/js/2.213bd424.chunk.js.LICENSE.txt": "/Talleres_Desarrollo_web/taller_3/static/js/2.213bd424.chunk.js.LICENSE.txt"
+    "main.css": "/Talleres_Desarrollo_web/static/css/main.1aaeb019.chunk.css",
+    "main.js": "/Talleres_Desarrollo_web/static/js/main.4e9dd9b2.chunk.js",
+    "main.js.map": "/Talleres_Desarrollo_web/static/js/main.4e9dd9b2.chunk.js.map",
+    "runtime-main.js": "/Talleres_Desarrollo_web/static/js/runtime-main.e462ff7e.js",
+    "runtime-main.js.map": "/Talleres_Desarrollo_web/static/js/runtime-main.e462ff7e.js.map",
+    "static/css/2.6293a573.chunk.css": "/Talleres_Desarrollo_web/static/css/2.6293a573.chunk.css",
+    "static/js/2.8173300b.chunk.js": "/Talleres_Desarrollo_web/static/js/2.8173300b.chunk.js",
+    "static/js/2.8173300b.chunk.js.map": "/Talleres_Desarrollo_web/static/js/2.8173300b.chunk.js.map",
+    "static/js/3.276732af.chunk.js": "/Talleres_Desarrollo_web/static/js/3.276732af.chunk.js",
+    "static/js/3.276732af.chunk.js.map": "/Talleres_Desarrollo_web/static/js/3.276732af.chunk.js.map",
+    "index.html": "/Talleres_Desarrollo_web/index.html",
+    "static/css/2.6293a573.chunk.css.map": "/Talleres_Desarrollo_web/static/css/2.6293a573.chunk.css.map",
+    "static/css/main.1aaeb019.chunk.css.map": "/Talleres_Desarrollo_web/static/css/main.1aaeb019.chunk.css.map",
+    "static/js/2.8173300b.chunk.js.LICENSE.txt": "/Talleres_Desarrollo_web/static/js/2.8173300b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.447fe1d8.js",
+    "static/js/runtime-main.e462ff7e.js",
     "static/css/2.6293a573.chunk.css",
-    "static/js/2.213bd424.chunk.js",
+    "static/js/2.8173300b.chunk.js",
     "static/css/main.1aaeb019.chunk.css",
     "static/js/main.4e9dd9b2.chunk.js"
   ]
